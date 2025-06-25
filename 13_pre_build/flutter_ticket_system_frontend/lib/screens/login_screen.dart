@@ -77,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Instituto de Estadísticas de Puerto Rico"),
+        title: Text("IT Ticketing System"),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 152, 230, 88),
       ),
