@@ -105,8 +105,8 @@ app.post('/requests', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail', // o el servicio que utilices
             auth: {
-                user: 'marcos.santana@estadisticas.pr', // Tu correo
-                pass: 'aaaz rywz hhct lldo', // Tu contraseña de correo o contraseña de aplicación
+                user: 'email-here', // Tu correo
+                pass: 'google-passkey-here', // Tu contraseña de correo o contraseña de aplicación
             },
             logger: true, // Enable logging
     debug: true // Enable debug output
@@ -114,8 +114,8 @@ app.post('/requests', async (req, res) => {
 
         // Configurar el email
         const mailOptions = {
-            from: 'marcos.santana@estadisticas.pr', // Tu correo
-            to: ['marcos.santana@estadisticas.pr', 'suat.giray@estadisticas.pr'], // Correo del destinatario (usuario)
+            from: 'email-here', // Tu correo
+            to: ['email-here'], // Correo del destinatario (usuario)
             subject: subject, // Asunto del ticket
             text: request + "\n\n This request was sent by user: " + uniqueId, // Descripción del ticket
         };
@@ -194,8 +194,8 @@ app.get('/request/:id', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail', // or other service
             auth: {
-                user: 'marcos.santana@estadisticas.pr', // Tu correo
-                pass: 'aaaz rywz hhct lldo', // Tu contraseña de correo o contraseña de aplicación
+                user: 'email-here', // Tu correo
+                pass: 'google-passkey-here', // Tu contraseña de correo o contraseña de aplicación
             },
             logger: true, // Enable logging
             debug: true // Enable debug output
@@ -205,9 +205,8 @@ app.get('/request/:id', async (req, res) => {
 
         // Configurar el email
         const mailOptions = {
-            from: 'marcos.santana@estadisticas.pr', // Your email
+            from: 'email-here', // Your email
             to: adminEmail, // Admin's email
-            //to: 'marcos.santana@estadisticas.pr',
             subject: `Ticket: ${name} has been Assigned`, // Subject of the email
             text: `The ticket with subject ${name} has been assigned to you. Login to the ticketing system to view details.`, // Message content
         };
