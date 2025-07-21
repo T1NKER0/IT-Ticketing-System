@@ -29,6 +29,7 @@ A system designed for the submission, assignment, and management of IT support r
 - View and manage all submitted tickets.
 - Assign open tickets to specific technicians.
 - Modify ticket status (`Open`, `Closed`) and priority levels.
+- Create and delete users
 - Reset or modify user passwords.
 - 📩 **Receive email notifications** when a new ticket is submitted.
 
