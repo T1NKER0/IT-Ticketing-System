@@ -17,7 +17,6 @@ A system designed for the submission, assignment, and management of IT support r
 - Submit new support tickets with:
   - A subject line describing the issue.
   - A detailed description of the problem.
-- View the status of submitted tickets.
 
 ### 🧑‍🔧 Technicians
 - Log in to their account.
